@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="main.xsl"?>
+<catlog>
+   <cd>
+      <title> king empire</title>
+      <author> john do</author>
+      <country> USA</country>
+   </cd>
+      
+   <CD>
+      <title> web tech</title>
+      <author> jemini</author>
+      <country> USA</country>
+   </CD>
+
+   <CD>
+      <title> c++</title>
+      <author> james goslin</author>
+      <country> Japan</country>
+   </CD>
+
+   <CD>
+      <title> C</title>
+      <author> dennis</author>
+      <country> USA</country>
+   </CD>
+
+   <CD>
+      <title> king empire</title>
+      <author> john do</author>
+      <country> USA</country>
+   </CD>
+</catlog>
