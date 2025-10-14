@@ -1,0 +1,39 @@
+
+import React, { useState } from 'react';
+
+function App() {
+  const [message, setMessage] = useState('');
+
+  // This is the callback function that receives data from the child
+  const handleChildData = (data) => {
+    setMessage(data);
+  };
+
+  // Child component defined inside the same file
+  const ChildComponent = ({ sendDataToParent }) => {
+    const childMessage = 'Hello from Child Component!';
+
+    const handleClick = () => {
+      sendDataToParent(childMessage); // Call parent’s function
+    };
+
+    return (
+      <div>
+        <h2>Child Component</h2>
+        <button onClick={handleClick}>Send Message to Parent</button>
+      </div>
+    );
+  };
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Parent Component</h1>
+      <p>Message from Child: {message}</p>
+
+      {/* Render the child and pass the callback as a prop */}
+      <ChildComponent sendDataToParent={handleChildData} />
+    </div>
+  );
+}
+
+export default App;
